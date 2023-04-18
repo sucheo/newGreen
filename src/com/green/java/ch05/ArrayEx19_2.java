@@ -23,14 +23,14 @@ public class ArrayEx19_2 {
         int sum = 0; // 합계
         double ave = 0; // 평균
 
-        int[] sum_subject = {0,0,0}; // 과목 총점
+        int[] sum_subject = {0, 0, 0}; // 과목 총점
         String[] subject_name = {"국어", "영어", "수학"}; // 과목명
 
         int[][] score = {
-                  {100,90,80}
-                , {20,20,20}
-                , {30,30,30}
-                , {40,40,40}
+                {100, 90, 80}
+                , {20, 20, 20}
+                , {30, 30, 30}
+                , {40, 40, 40}
 
         };
 
@@ -40,7 +40,7 @@ public class ArrayEx19_2 {
         for (int i = 0; i < score.length; i++) {
             sum = 0; // 합계
             ave = 0; // 평균
-            System.out.printf("%d\t   ", i+1);          // 번호출력
+            System.out.printf("%d\t   ", i + 1);          // 번호출력
 
             for (int j = 0; j < score[i].length; j++) {
                 System.out.printf("%4d", score[i][j]);  // for 국영수 점수 출력
@@ -49,33 +49,31 @@ public class ArrayEx19_2 {
 
             for (int j = 0; j < score[i].length; j++) { // for 점수 계산
                 sum += score[i][j];
-                if(j==0){                               // 과목 총점 계산
+                if (j == 0) {                               // 과목 총점 계산
                     sum_subject[j] += score[i][j];
-                }
-                else if(j==1){
+                } else if (j == 1) {
                     sum_subject[j] += score[i][j];
-                }
-                else if(j==2){
+                } else if (j == 2) {
                     sum_subject[j] += score[i][j];
 
+
+                }
+                ave = sum / (double) score[i].length;
+                System.out.printf("%4d %.1f \t \n", sum, ave);
+
+                String str = "ab123cd";
+                char[] a = str.toCharArray();
+
+                System.out.printf("%c", a[3]);
 
 
             }
-            ave = sum / (double)score[i].length;
-            System.out.printf("%4d %.1f \t \n",sum, ave);
+            System.out.printf("\n ==================================\n");
+            System.out.printf("총점\n");
 
-            String str = "ab123cd";
-            char[] a = str.toCharArray();
-
-            System.out.printf("%c", a[3]);
-
-
-        }
-        System.out.printf("\n ==================================\n");
-        System.out.printf("총점\n");
-
-        for (int i = 0; i < subject_name.length; i++) { // 총점 출력
-            System.out.printf("%s: %d\n",subject_name[i], sum_subject[i] );
+        //    for (int i = 0; i < subject_name.length; i++) { // 총점 출력
+                System.out.printf("%s: %d\n", subject_name[i], sum_subject[i]);
+            }
         }
     }
-}
+

@@ -62,8 +62,6 @@ public class ArrayEx19 {
                 }
 
             }
-
-
             ave = sum / score[i].length;
             System.out.printf("%4d%4d \t \n",sum, ave);
 
