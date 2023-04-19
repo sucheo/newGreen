@@ -31,5 +31,5 @@ public class ArrayEx18 {
         }
         System.out.printf("sum=%d", sum);
 
-    }
+     }
 }

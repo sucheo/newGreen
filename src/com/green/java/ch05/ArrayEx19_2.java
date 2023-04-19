@@ -19,6 +19,7 @@ import java.util.Arrays;
  */
 public class ArrayEx19_2 {
     public static void main(String[] args) {
+        //절차지향형식
         String[] titles = { "국어", "영어", "수학", "사회" };
         int[] titleSumArr = new int[titles.length];
         int[][] score = {

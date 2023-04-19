@@ -11,11 +11,6 @@ public class FlowEx6 {
 
         String season = "";
 
-        // num값이 345 봄
-        // 678 여름
-        // 9 10 11 가을
-        // 12 1 2 겨울
-
         switch (mon) {
             case 3:
             case 4:
