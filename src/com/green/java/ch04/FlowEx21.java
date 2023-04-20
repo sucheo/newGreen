@@ -12,14 +12,6 @@ public class FlowEx21 {
                 else System.out.print("\t\t");
             }
             System.out.printf("\n");
-
-
-
-
-
-
-
         }
-
     }
 }
