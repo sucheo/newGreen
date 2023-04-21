@@ -7,7 +7,7 @@ public class FlowEx28Method {
     public static void main(String[] args) {
         int input, answer;
         Scanner scan = new Scanner(System.in);
-        answer = getRandomNumber(99, 100);
+        answer = getRandomNumber(1, 100);
         System.out.println(answer);//3,5 3,4,5
 
         do {

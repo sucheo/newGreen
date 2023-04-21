@@ -13,11 +13,14 @@ public class FlowEx18Method {
         gugudan(num);
         gugudan(9);
         gugudanall(9);
+        //arguments; 아규먼츠 , 인수
         gugudan(2,8);
         gugudan(5,7);
+
+        System.out.println();
     }
 
-    public static void gugudan(int sDan, int eDan){
+    public static void gugudan(int sDan, int eDan){//매개변수 = 파라미터 = 인자
         for (int i = sDan; i <=eDan ; i++) {
             gugudan(i);
             }
