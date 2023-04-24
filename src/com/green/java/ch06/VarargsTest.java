@@ -1,6 +1,9 @@
 package com.green.java.ch06;
 
 public class VarargsTest {
+
+
+
     public static void main(String[] args) {
         sum(1);//sum :1
         sum(1,2); //sum :3

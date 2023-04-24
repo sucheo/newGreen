@@ -1,7 +1,7 @@
 package com.green.java.ch07;
 
 public class Child extends Parent{
-    int age;
+
     public Child(){
         System.out.println("-- Child 기본 생성자 --");}
 

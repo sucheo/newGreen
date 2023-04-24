@@ -12,5 +12,8 @@ public class Card {
         this.kind = kind;
         this.num = num;
     }
-
+    @Override
+    public String toString() {
+        return "kind: " + kind + ", num: " +num;
+    }
 }

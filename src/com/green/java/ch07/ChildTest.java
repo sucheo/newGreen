@@ -10,7 +10,7 @@ public class ChildTest {
         System.out.println();
         GrandChild gc = new GrandChild();
         gc.play();
-        gc.age = 10;
+        gc.age = 20;
         System.out.println();
         gc.play();
     }

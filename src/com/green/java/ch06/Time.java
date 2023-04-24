@@ -5,6 +5,7 @@ private int hour;
 private int minute;
 private int second;
 
+public void test() {int gg = 10;}
     public int getHour() {
         return hour;
     }

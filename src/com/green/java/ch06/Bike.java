@@ -4,8 +4,11 @@ public class Bike {
     String brand;
     String model;
     int price;
-
-
+//
+//Bike(){
+//    this("야마하","H2-1",int price);
+//}
+//
     public Bike(String brand, String model, int price) {
         this.brand = brand;
         this.model = model;
