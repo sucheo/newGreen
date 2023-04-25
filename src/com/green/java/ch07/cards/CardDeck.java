@@ -43,8 +43,6 @@ public class CardDeck {
             cards[rIdx] = temp;
         }
     }
-
-
     Card pick() {
 
             Card temp = cards[idx];
@@ -53,7 +51,4 @@ public class CardDeck {
         //cards[idx] = null;
         //return cards[idx++];
    }
-
 }
-
-
