@@ -19,5 +19,4 @@ public class Child extends Parent{
     void play(){
         System.out.printf("%d살인 아이가 논다 ",age);
     }
-
 }

@@ -5,18 +5,23 @@ public class BindingTest {
 
         Parent2 p = new Child2();
         Child2 c = new Child2();
+        p.method();
+        c.method();
+        System.out.println(c.x);
+        System.out.println(p.x);
     }
 }
 class Parent2{
     int x = 100;
+
     void method(){
         System.out.println("Parent Method");
     }
 }
 class Child2 extends Parent2{
     int x = 200;
+    @Override
     void method() {
         System.out.println("Child Method");
-    }
-
-}
+        }
+        }

@@ -9,8 +9,6 @@ public class PolyArgumentTest {
         buyer.buy(com); //Computer를 200만원에 구매하였습니다.
         
         buyer.printState(); // 나의 남은 돈 + 보너스 점수는 %,d점 입니다.
-
-
     }
 }
 class Buyer{
@@ -51,7 +49,7 @@ class Product{
 class Tv2 extends Product{
     public Tv2(){
         super(100);
-    }@Override
+    }
     public String toString(){
         return "Tv";
     }
@@ -59,7 +57,7 @@ class Tv2 extends Product{
 class Computer extends Product{
     public Computer(){
         super(200);
-    }@Override
+    }
     public String toString(){
         return "Computer";
     }
