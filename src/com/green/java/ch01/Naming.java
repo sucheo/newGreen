@@ -12,7 +12,7 @@ public class Naming {
         // 가장 많이 쓰임
         // 스네이크 케이스 기법
         //String _hello_world_bye();
-        // 케밥 케이스 기법
+        // 케밥 케이
         //String -hello-world-byte();
 
         // 자바에서 쓸수있는 특수기호 2개 : _ , $
