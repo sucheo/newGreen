@@ -10,9 +10,11 @@ public class ArrayListStudy3 {
         list.add(20);
         list.add(30);
         System.out.println(list);
+
         list.add(1,100);
         list.add(0,300);
         System.out.println(list);
+
         ArrayList<String> list1 = new ArrayList<>();
         list1.add("a");
         list1.add("b");
@@ -22,6 +24,8 @@ public class ArrayListStudy3 {
 
         int removeValue = list.remove(4);
         System.out.println("removeValue : " + removeValue);
-        System.out.println();
+        System.out.println(list);
+        System.out.println(list.size());
+
     }
 }

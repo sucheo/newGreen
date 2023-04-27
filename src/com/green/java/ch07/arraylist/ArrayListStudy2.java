@@ -18,7 +18,8 @@ public class ArrayListStudy2 {
         list.add(11);           //오로지 정수값만 가능
         list.add(10);
 
-        int n1 = list.get(0);
+        int n1 = list.get(0);//0번방 쓰기
+        System.out.println(n1);
         System.out.println(list);
 
 
