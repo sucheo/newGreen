@@ -11,11 +11,8 @@ public class OperatorStudy9 {
         System.out.println(" num : " + num);
 
         //num값 홀짝 구분 삼항식
-
         System.out.println(num + "(은/는)" + (num % 2 == 0 ? "짝수" : "홀수"));
         // 위 연산에서 String 타입과 만나 자동 형변환됨
 
     }
 }
-
-

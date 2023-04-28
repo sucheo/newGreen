@@ -20,6 +20,7 @@ public class CardDeck {
                         num = "Q";
                     case 13:
                         num = "K";
+                        break;
                     default:
                         num = String.valueOf(j);
                 }

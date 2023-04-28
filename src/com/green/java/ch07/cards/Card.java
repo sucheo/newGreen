@@ -6,11 +6,12 @@ public class Card {
 
     String kind; //무늬
     String num; //번호
-
+    String a;
     //외부에서 무늬, 번호 값을 받아서 나의 멤버필드 무늬와 번호에 대입하는 생성자 만들기
     Card(String kind, String num){
         this.kind = kind;
         this.num = num;
+        this.a=a;
     }
     @Override
     public String toString() {
