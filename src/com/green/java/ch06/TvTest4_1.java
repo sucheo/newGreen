@@ -14,6 +14,7 @@ public class TvTest4_1 {
         System.out.println(tvArr[0].channel);
         System.out.println(tvArr[1].channel);
         System.out.println(tvArr[2].channel);
+        String str = " a_b_다_라_마바";
+        String r1 = str.trim().replace("_","*").toUpperCase();
     }
-
 }

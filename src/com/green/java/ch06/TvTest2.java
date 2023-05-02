@@ -29,9 +29,10 @@ class  Tv2{
     void power() {power = !power;}
 
     void channelUp() {
-    if (channel<MAX_CHANNEL)
+    if (channel<MAX_CHANNEL){
         ++channel;
     }
+}
 
     void channelDown() {
         if (channel>MIN_CHANNEL)
