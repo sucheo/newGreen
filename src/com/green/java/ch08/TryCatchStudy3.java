@@ -12,7 +12,10 @@ public class TryCatchStudy3 {
             if(r % 2 == 0){
                 return 100;
             }
-        }catch (Exception e){
+        }catch (ArithmeticException | NumberFormatException e2){
+
+        }
+        catch (Exception e){
             e.printStackTrace();
         }finally {
             System.out.println("Finally");

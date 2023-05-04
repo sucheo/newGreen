@@ -1,5 +1,7 @@
 package com.green.java.ch07.arraylist;
 
+import java.util.Arrays;
+
 public class MyArrayList {
 
     private int[] items;
@@ -67,15 +69,31 @@ public class MyArrayList {
     public void bubbleSort() {
         int temp;
 
-        for (int i = items.length-1; i > 0; i--) {
+        for (int i = items.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (items[j] > items[j + 1]) {
                     temp = items[j];//item[0]번방일때 -> temp[0] 값을 복사해 준다.
-                    items[j] = items[j+1];
-                    items[j+1] = temp;
+                    items[j] = items[j + 1];
+                    items[j + 1] = temp;
                 }
             }
         }
+    }
+
+    public void set(int num1, int num2) {
+
+        items[num1] = num2;
+
+
+    }
+
+    public boolean contains(int num) {
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] == num) {
+        return true;
+            }
+        }
+        return  false;
     }
 }
 

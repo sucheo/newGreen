@@ -24,8 +24,6 @@ public class ArrayStudy6 {
     static int[] getRandomNoDuplicatedArr(int ars, int rds, int rdd) {
 
         int[] arr = new int[ars];
-
-
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) ((Math.random() * rdd - rds + 1) + rds);
 
@@ -40,5 +38,3 @@ public class ArrayStudy6 {
     }
 
 }
-
-

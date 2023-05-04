@@ -6,8 +6,8 @@ public class Rule {
     private int gamerScore;
     private int dealerScore;
     int sum = 0;
-
-    public int getScore(List<Card> cardList) {
+final static int BLACKJACK_SCORE = 21;
+    public static int getScore(List<Card> cardList) {
         int sum = 0;
         for (Card c : cardList) {
             sum += getDenominationToNum(c);
@@ -16,7 +16,7 @@ public class Rule {
 
     }
 
-    private int getDenominationToNum(Card c) {
+    private static int getDenominationToNum(Card c) {
         switch (c.getDenomination()) {
             case "A":
                 return 1;
@@ -30,5 +30,32 @@ public class Rule {
 
         }
     }
+    public static void whoIsWin(Gamer gamer, Dealer dealer) {
+        int gPoint = gamer.getPointSum();
+        int dPoint = dealer.getPointSum();
 
+        if( gPoint <=BLACKJACK_SCORE && (gPoint > dPoint || dPoint > BLACKJACK_SCORE)){
+            System.out.println("게이머승리");
+        }else if (dPoint <= BLACKJACK_SCORE && (dPoint >gPoint || gPoint >BLACKJACK_SCORE)){
+            System.out.println("딜러승리");
+        }else {
+            System.out.println("무승부");
+        }
+//        if (gamer.getPointSum()>21){
+//            System.out.println("딜러승리");
+//        }
+//        else if(gamer.getPointSum()> dealer.getPointSum()){
+//        System.out.println("게이머승리");
+//    } else if(gamer.getPointSum() == dealer.getPointSum())   {
+//        System.out.println("무승부입니다.");
+//    }else if (gamer.getPointSum()>21 && dealer.getPointSum()>21){
+//        System.out.println("무승부입니다.");
+//    }else if (dealer.getPointSum()>21){
+//        System.out.println("게이머 승리");
+//    }
+//    else {
+//        System.out.println("딜러승리");
+//    }
+//    }
+    }
 }

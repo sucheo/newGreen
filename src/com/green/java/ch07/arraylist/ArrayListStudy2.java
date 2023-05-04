@@ -1,6 +1,7 @@
 package com.green.java.ch07.arraylist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListStudy2 {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class ArrayListStudy2 {
         System.out.println(d2);
 
         //generic 타입써서 Integer써서 정수값
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         list.add(11);           //오로지 정수값만 가능
         list.add(10);
 
