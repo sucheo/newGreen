@@ -89,7 +89,7 @@ public class MyArrayList {
 
     public boolean contains(int num) {
         for (int i = 0; i < items.length; i++) {
-            if (items[i] ==a num) {
+            if (items[i] == num) {
         return true;
             }
         }
