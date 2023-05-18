@@ -1,6 +1,7 @@
 package com.green.java.blackjack;
 
 import com.green.java.ch06.Car;
+import com.green.javasub.card.CardDeck;
 
 class Card {
     private String pattern;
@@ -12,17 +13,12 @@ class Card {
     }
 
 
-
-        public String getPattern() {
+    public String getPattern() {
         return pattern;
     }
 
     public String getDenomination() {
         return denomination;
-    }
-    @Override
-    public String toString() {
-        return String.format("Card {%s,%s}",getPattern(),getDenomination());
     }
 
 }
